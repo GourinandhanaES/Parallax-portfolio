@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .main {
+    background-color: #111;
+    overflow: hidden;
+  }
+/* ---------------------   Slide  1   ----------------------- */
+  .salute {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .saluteTextContainer {
+    flex: 3;
+  }
+  
+  .saluteImgContainer {
+    flex: 1;
+  }
+  
+  .saluteText {
+    color: #6b6666;
+    font-size: 14vw;
+    cursor: default;
+  }
+
+  .saluteText1{
+    color: #686565;
+    font-size: 3vw;
+    cursor: default;
+  }
+  
+  .saluteImg {
+    width: 550px;
+    height: 600px;
+  }
+
+  /* ----------------------- Slide 2 ----------------------------- */
+  
+  .nameContainer {
+    height: 100vh;
+    background-color: rgb(123, 121, 124);
+  }
+  
+  .name {
+    font-size: 7vw;
+    color: #333;
+    cursor: default;
+  }
+
+  .about1{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 2vw;
+    color: #141414;
+    cursor: default;
+  }
+
+  /* ---------------------- Slide 3 ----------------------------- */
+
+  #skills {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .skill-item {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-10px);
+    background-color: #e3f2fd;
+  }
+
+  /* -------------------------- Slide 4 ----------------------- */
+  
+  .purple {
+    background: linear-gradient(45deg, #f3f4f6, #d4d8e1);
+  }
+  
+  .jobTitle {
+    font-size: 5vw;
+    color: #666262;
+    cursor: default;
+  }
+
+  .heading small{
+    color: #6f34fe;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .heading h3{
+    margin-top: 0.5rem;
+    color: #3f396d;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .expertise h4{
+    color: #3f396d;
+    font-weight: 700;
+  }
+  .expertise a{
+    text-decoration: none;
+    color: #fca61f;
+  }
+  .expertise a:hover{
+    color: #6f34fe;
+  }
+  .expertise .service-card{
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 0.7rem;
+  }
+
+  /* ------------------------------- Slide 5 ---------------------------- */
+  
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    padding: 0px 100px;
+  }
+  
+  .projectsTitle {
+    font-size: 10vw;
+    color: #504e4e;
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .project:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+  
+  .phone {
+    flex: 1;
+    width: 300px;
+    height: 600px;
+    position: relative;
+  }
+  
+  .phoneScreen {
+    width: 264px;
+    height: 567px;
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    border-radius: 28px;
+    overflow: scroll;
+  }
+  
+  .phoneScreen::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .phoneApp {
+    width: 100%;
+  }
+  
+  .projectDetail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .projectTitle {
+    font-size: 7vw;
+    color: #6b6969;
+  }
+  
+  .projectDesc {
+    font-size: 20px;
+    color: #555;
+    text-align: justify;
+    line-height: 40px;
+  }
+  
+  .projectButton {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #555;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .projectButton::after {
+    content: "View Demo";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+    color: #222;
+  }
+  
+  .projectButton:hover.projectButton::after {
+    transform: translateX(100%);
+  }
+  
+  .laptop {
+    flex: 1;
+    width: 300px;
+    height: 600px;
+    position: relative;
+  }
+  
+  .laptopScreen {
+    width: 264px;
+    height: 567px;
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    border-radius: 28px;
+    overflow: scroll;
+  }
+  
+  .laptopApp {
+    width: 100%;
+  }
+  
+  .laptopScreen::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ------------------------- Slide 6 ---------------------- */
+  
+  .footContainer {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(45deg, #f3f4f6, #d4d8e1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .footCard {
+    background-color: #000;
+    color: #fff; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; 
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .footCard.show {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  
+  .footCard:hover {
+    transform: translateY(-5px); 
+  }
+
+  .footTitle {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .footCard i {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  
+  .footTitle1 {
+    font-size: 80px;
+    color: #333;
+  }
+
+  .allButton {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #555;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .allButton::after {
+    content: "Here";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbd5d5;
+    color: #222;
+  }
+  
+  .allButton:hover.allButton::after {
+    transform: translateX(100%);
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  @media screen and (max-width:1024px) {
+  
+    .projects{
+      padding: 0 30px;
+      text-align: center;
+    }
+  
+    .project{
+      flex-direction: column;
+      height: max-content;
+    }
+    .project:nth-child(2n){
+      flex-direction: column;
+    }
+  
+    .phone,.laptop{
+      transform: none !important;
+    }
+    
+    .footTitle{
+      text-align: center;
+      font-size: 10vw;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .saluteText {
+        font-size: 10vw;
+    }
+    .saluteText1 {
+        font-size: 5vw;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-img, .about-text {
+        max-width: 90%;
+    }
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
